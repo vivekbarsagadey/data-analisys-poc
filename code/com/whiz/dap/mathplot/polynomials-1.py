@@ -27,7 +27,7 @@ class MathGraph:
 
 
 # x= [3,4,5,6]
-mathFunction = math_fun.MathFunction(plt);
+mathFunction = math_fun.MathFunction();
 mathGraph = MathGraph(plt)
 x = np.arange(-5, 5.0, 0.1)
 print(x)

@@ -1,2 +1,4 @@
-pip==19.2.3
+pip
 matplotlib
+pandas
+scikit-learn
