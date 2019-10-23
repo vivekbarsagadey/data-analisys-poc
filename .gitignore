@@ -1,3 +1,5 @@
 /.idea
 /venv/
 /venv-36/
+/code/com/whiz/dap/jupy/.ipynb_checkpoints/
+/code/com/whiz/dap/tensor/text/

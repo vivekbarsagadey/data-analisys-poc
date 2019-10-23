@@ -7,3 +7,4 @@ pyttsx3
 pywin32
 jupyterlab
 tensorflow
+ipykernel
