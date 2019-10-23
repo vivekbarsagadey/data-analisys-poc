@@ -10,8 +10,17 @@ white = pd.read_csv("http://archive.ics.uci.edu/ml/machine-learning-databases/wi
 # Read in red wine data
 red = pd.read_csv("http://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv", sep=';')
 
+# Define the scaler
+scaler = StandardScaler().fit(X_train)
 
-def show():
+# Scale the train set
+X_train = scaler.transform(X_train)
+
+# Scale the test set
+X_test = scaler.transform(X_test)
+
+
+def show(red, white):
     fig, ax = plt.subplots(1, 2, figsize=(8, 4))
 
     ax[0].scatter(red['quality'], red["sulphates"], color="red")
@@ -31,13 +40,3 @@ def show():
     fig.suptitle("Wine Quality by Amount of Sulphates")
 
     plt.show()
-
-
-# Define the scaler
-scaler = StandardScaler().fit(X_train)
-
-# Scale the train set
-X_train = scaler.transform(X_train)
-
-# Scale the test set
-X_test = scaler.transform(X_test)

@@ -2,3 +2,8 @@ pip
 matplotlib
 pandas
 scikit-learn
+gTTS
+pyttsx3
+pywin32
+jupyterlab
+tensorflow
