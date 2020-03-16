@@ -8,3 +8,4 @@ pywin32
 jupyterlab
 tensorflow
 ipykernel
+statsmodels
